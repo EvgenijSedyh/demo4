@@ -25,6 +25,9 @@ public class EntryController {
         buttonEmty.setOnAction(event -> {
             System.out.println("Вы успешно вошли");
         });
+        buttonRegistration.setOnAction(event -> {
+            System.out.println("Вы [jnbnt pfhtutcnhbhjdfnmcz");
+        });
     }
 
 }
