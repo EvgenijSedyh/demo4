@@ -1,8 +1,14 @@
 package com.example.demo4.Controler;
 
 import javafx.fxml.FXML;
+import javafx.fxml.FXMLLoader;
+import javafx.scene.Parent;
+import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.stage.Stage;
+
+import java.io.IOException;
 
 public class RegistrationController {
 
@@ -41,5 +47,26 @@ public class RegistrationController {
 
     @FXML
     private TextField stringStreet;
+    @FXML
+    void initialize(){
+        buttonExit.setOnAction(event -> {
+            buttonExit.getScene().getWindow().hide();
+
+            FXMLLoader loader = new FXMLLoader();
+            loader.setLocation(getClass().getResource("/com/example/demo4/EntryWindow.fxml"));
+            try {
+                loader.load();
+            } catch (IOException e) {
+                throw new RuntimeException(e);
+            }
+            Parent root = loader.getRoot();
+            Stage stage = new Stage();
+            stage.setTitle("Автоизация");
+            stage.setResizable(false);
+            stage.setScene(new Scene(root));
+            stage.show();
+        });
+
+    }
 
 }

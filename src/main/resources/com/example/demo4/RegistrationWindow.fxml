@@ -7,7 +7,7 @@
 <?import javafx.scene.text.Font?>
 
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="283.0" prefWidth="300.0" style="-fx-background-color: #6A5ACD;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="RegistrationController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="283.0" prefWidth="300.0" style="-fx-background-color: #6A5ACD;" xmlns="http://javafx.com/javafx/20.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.demo4.Controler.RegistrationController">
    <children>
       <Button fx:id="buttonRegistration" alignment="CENTER" layoutX="82.0" layoutY="241.0" mnemonicParsing="false" style="-fx-background-color: #ADD8E6;" text="Зарегистрироваться">
          <font>
